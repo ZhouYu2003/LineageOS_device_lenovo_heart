@@ -307,6 +307,12 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
+# RIL
+PRODUCT_PACKAGES += \
+    libjson \
+    libril \
+    librilutils
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
