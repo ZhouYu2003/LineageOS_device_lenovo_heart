@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.qcom.rc
 
 # Display
 PRODUCT_PACKAGES += \
