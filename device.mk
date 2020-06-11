@@ -69,6 +69,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo
 
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
