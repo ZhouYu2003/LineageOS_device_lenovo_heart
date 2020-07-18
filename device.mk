@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Common init scripts
+PRODUCT_PACKAGES += \
+    init.custom.rc
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
