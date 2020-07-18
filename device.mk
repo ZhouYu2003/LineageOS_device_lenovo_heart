@@ -57,7 +57,15 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.custom.rc
+    init.custom.rc \
+    init.lenovo.common.rc \
+    init.lenovo.rc \
+    init.lenovo.usb.configfs.rc \
+    init.msm.usb.configfs.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.target.rc
 
 # Display
 PRODUCT_PACKAGES += \
