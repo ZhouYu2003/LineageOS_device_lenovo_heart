@@ -542,6 +542,18 @@ service vendor.tftp_server /vendor/bin/tftp_server
    class core
    user root
 
+on property:vendor.wc_transport.start_hci=true
+    start vendor.start_hci_filter
+
+on property:vendor.wc_transport.start_hci=false
+    stop vendor.start_hci_filter
+
+service vendor.start_hci_filter /system/vendor/bin/wcnss_filter
+    class late_start
+    user bluetooth
+    group bluetooth diag system wakelock
+    disabled
+
 service vendor.bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
     class late_start
     user bluetooth
@@ -751,7 +763,6 @@ service qti-testscripts /system/bin/sh /system/etc/init.qcom.testscripts.sh
     user root
     disabled
     oneshot
-    seclabel u:r:qti-testscripts:s0
 
 service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
     class late_start
@@ -949,7 +960,6 @@ on property:vendor.display.lcd_density=*
 service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootdevice/by-name/logdump
     class core
     writepid /dev/cpuset/system-background/tasks
-    seclabel u:r:logdumpd:s0
     disabled
 
 # Logdumpd is enabled only for userdebug non-perf build
