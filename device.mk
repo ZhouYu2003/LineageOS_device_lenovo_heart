@@ -475,3 +475,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# HALS
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media 
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8150/display 
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio 
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150/display 
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150/media
