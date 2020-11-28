@@ -1,3 +1,4 @@
 on post-fs
     mount none /system/bin/hw/android.hardware.power@1.2-service /vendor/bin/hw/android.hardware.power@1.2-service bind
 
+mkdir /data/misc/credstore 0700 credstore credstore
