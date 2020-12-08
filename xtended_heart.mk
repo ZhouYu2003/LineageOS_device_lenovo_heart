@@ -6,15 +6,15 @@
 
 $(call inherit-product, device/lenovo/heart/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := heart
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo Z5 Pro GT
-PRODUCT_NAME := lineage_heart
+PRODUCT_NAME := xtended_heart
 
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085"
 
