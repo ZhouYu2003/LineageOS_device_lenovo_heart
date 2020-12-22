@@ -18,7 +18,6 @@ LOCAL_SHARED_LIBRARIES := \
     libxml2 \
     libbase \
     libhidlbase \
-    libhidltransport \
     libutils \
     android.hardware.power@1.2
 
