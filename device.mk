@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
-# Slider handler
-PRODUCT_PACKAGES += \
-    KeyHandler
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
